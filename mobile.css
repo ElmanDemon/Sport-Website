@@ -1,0 +1,111 @@
+@media (max-width: 768px) {
+    .footer-top{
+        text-align: center;
+        row-gap: 30px;
+        padding: 20px 0;
+        flex-direction: column;
+    }
+
+    .footer-middle{
+        font-size: 2em;
+        left: 10px !important;
+        margin: 30px 0;
+    }
+
+    @keyframes move{
+        0% {left: 10px;bottom: 0;}
+        25% {left: 10px; bottom: 70px;}
+    }
+
+    .social-media{
+        margin-top: 50px;
+    }
+
+    .footer-top .contact{
+        margin-bottom: 20px;
+    }
+
+    .footer-top .contact h1{
+        font-size: 1.5em;
+    }
+
+    .navbar{
+        padding-top: 20px;
+    }
+
+    .navbar .nav-menu{
+        position: absolute; 
+        flex-direction: column;
+        top: 0;
+        right: -220px;
+        background-color: brown;
+        height: 100vh;
+        padding: 80px 60px;
+        row-gap: 20px;
+        text-align: center;
+        background-color: #222;
+        transition: right .3s;
+        z-index: 5;
+    }
+    
+    .menu-dropdown-wrapper{
+        z-index: 2;
+        top: 30px;
+    }
+
+    .nav-loqo{
+        width: 20%;
+        height: 20%;
+    }
+
+    .nav-search .search{
+        width: 100px;
+    }
+
+    .menu-bar{
+        display: inline-block;
+    }
+
+    .close-btn{
+        display: inline-block;
+        position: absolute;
+        top: 20px; right: 15px;
+    }
+
+    #federation .items{
+        padding-left: 50px !important;
+    }
+
+    .buttons{
+        margin-top: 300px !important 
+    }
+
+    .slider-wrapper .slider-item h1{
+        font-size: 3em;
+    }
+
+}
+
+@media (max-width: 820px){
+    .footer-middle{
+        font-size: 2em;
+        left: 36%;
+        top: 200px;
+    }
+
+    .footer-top{
+        padding: 50px 30px;
+    }
+
+    #federation .items{
+        padding-left: 100px;
+    }
+
+    .slider-dots{
+        bottom: 60px;
+    }
+
+    .buttons{
+        margin-top: 55% ;
+    }
+}

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azərbaycanda İdman</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="shortcut icon" href="aze.ico" type="image/x-icon">
+    <link rel="icon" href="aze.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-loqo">
+                <img src="img/aze-loqo.png" alt="">
+            </a>
+
+            <ul class="nav-menu">
+                <li class="menu-list"><a href="index.html">Ana Səhifə</a></li>
+                <li class="sport menu-list">
+                    <span>İdman <i class="fa-solid fa-angle-down"></i></span>
+                    <div class="menu-dropdown-wrapper">
+                        <ul class="menu-dropdown">
+                            <a href="#federation"><li>Federasiyalar</li></a>
+                            <a href="#champions"><li>Mükafatçılar</li></a>
+                            <a href=""><li>İdmanın tarixi</li></a>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu-list"><a href="#gallery">Qalareya</a></li>
+                <!-- <li class="menu-list"><a href="#">Haqqımızda</a></li> -->
+                <li class="menu-list"><a href="#footer">Əlaqə</a></li>
+                <span class="close-btn"><i class="fa-regular fa-circle-xmark"></i></span>
+            </ul>
+
+            <div class="nav-search">
+                <input class="search" type="text" placeholder="Axtar...">
+                <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <div class="menu-bar"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="slider">
+            <div class="slider-wrapper">
+                <div class="slider-shadow"></div>
+                <div class="slider-img">
+                    <img src="img/soccer.jpg" alt="">
+                </div>
+                <div class="slider-item">
+                    <h1>Futbol</h1>
+                    <a href="#"><button class="slider-btn">Ətraflı <i
+                                class="fa-solid fa-arrow-left-long"></i></button></a>
+                </div>
+                <div class="buttons">
+                    <button onclick="nextSlider(-1)"><i class="fa-solid fa-angle-left"></i></button>
+                    <button onclick="nextSlider(1)"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+            <div class="slider-wrapper">
+                <div class="slider-shadow"></div>
+                <div class="slider-img">
+                    <img src="img/voleyball.jpg" alt="">
+                </div>
+                <div class="slider-item">
+                    <h1>Voleybol</h1>
+                    <a href="#"><button class="slider-btn">Ətraflı <i
+                                class="fa-solid fa-arrow-left-long"></i></button></a>
+                </div>
+                <div class="buttons">
+                    <button onclick="nextSlider(-1)"><i class="fa-solid fa-angle-left"></i></button>
+                    <button onclick="nextSlider(1)"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+            <div class="slider-wrapper">
+                <div class="slider-shadow"></div>
+                <div class="slider-img">
+                    <img src="img/wrestling.jpeg" alt="">
+                </div>
+                <div class="slider-item">
+                    <h1>Güləş</h1>
+                    <a href="#"><button class="slider-btn">Ətraflı <i
+                                class="fa-solid fa-arrow-left-long"></i></button></a>
+                </div>
+                <div class="buttons">
+                    <button onclick="nextSlider(-1)"><i class="fa-solid fa-angle-left"></i></button>
+                    <button onclick="nextSlider(1)"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+            <div class="slider-wrapper">
+                <div class="slider-shadow"></div>
+                <div class="slider-img">
+                    <img src="img/judo.jpg" alt="">
+                </div>
+                <div class="slider-item">
+                    <h1>Cudo</h1>
+                    <a href="#"><button class="slider-btn">Ətraflı <i
+                                class="fa-solid fa-arrow-left-long"></i></button></a>
+                </div>
+                <div class="buttons">
+                    <button onclick="nextSlider(-1)"><i class="fa-solid fa-angle-left"></i></button>
+                    <button onclick="nextSlider(1)"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+            <div class="slider-dots">
+                <button class="slider-dot" onclick="dotSlider(1)"><span></span></button>
+                <button class="slider-dot" onclick="dotSlider(2)"><span></span></button>
+                <button class="slider-dot" onclick="dotSlider(3)"><span></span></button>
+                <button class="slider-dot" onclick="dotSlider(4)"><span></span></button>
+            </div>
+        </section>
+
+        <section id="federation">
+            <h1>İdman Federasiyaları</h1>
+            <div class="items">
+                <div class="item">
+                    <div class="fed-image">
+                        <img src="fed images/gimnastika.jpg" alt="">
+                    </div>
+                    <p>Azərbaycan Gimnastika Federasiyası</p>
+                    <h5>Mehriban Əliyeva</h5>
+                </div>
+                <div class="item">
+                    <div class="fed-image">
+                        <img src="fed images/boks.jpg" alt="">
+                    </div>
+                    <p>Azərbaycan Boks Federasiyası</p>
+                    <h5>Sahil Babayev</h5>
+                </div>
+                <div class="item">
+                    <div class="fed-image">
+                        <img src="fed images/basketbol.jpg" alt="">
+                    </div>
+                    <p>Azərbaycan Basketbol Federasiyası</p>
+                    <h5>Emin Əmrullayev</h5>
+                </div>
+                <div class="item">
+                    <div class="fed-image">
+                        <img src="fed images/voleybol.jpg" alt="">
+                    </div>
+                    <p>Azərbaycan Voleybol Federasiyası</p>
+                    <h5>Cavid Qurbanov</h5>
+                </div>
+                <div class="item">
+                    <div class="fed-image">
+                        <img src="fed images/affa.jpg" alt="">
+                    </div>
+                    <p>Azərbaycan Futbol Federasiyası</p>
+                    <h5>Rövnəq Abdullayev</h5>
+                </div>
+                <div class="item">
+                    <div class="fed-image">
+                        <img src="fed images/hendbol.jpg" alt="">
+                    </div>
+                    <p>Azərbaycan Həndbol Federasiyası</p>
+                    <h5>Saleh Məmmədov</h5>
+                </div>
+                <div class="item">
+                    <div class="fed-image">
+                        <img src="fed images/aticiliq.jpg" alt="">
+                    </div>
+                    <p>Azərbaycan Atıcılıq Federasiyası</p>
+                    <h5>Vilayət Eyvazov</h5>
+                </div>
+                <div class="item">
+                    <div class="fed-image">
+                        <img src="fed images/cudo.jpg" alt="">
+                    </div>
+                    <p>Azərbaycan Cüdo Federasiyası</p>
+                    <h5>Rəşad Nəbiyev</h5>
+                </div>
+                <div class="item">
+                    <div class="fed-image">
+                        <img src="fed images/gules.jpg" alt="">
+                    </div>
+                    <p>Azərbaycan Güləş Federasiyası</p>
+                    <h5>Mikayıl Cabbarov</h5>
+                </div>
+                <div class="item">
+                    <div class="fed-image">
+                        <img src="fed images/taekvondo.jpg" alt="">
+                    </div>
+                    <p>Azərbaycan Taekvondo Federasiyası</p>
+                    <h5>Kəmaləddin Heydərov</h5>
+                </div>
+                <div class="item">
+                    <div class="fed-image">
+                        <img src="fed images/uzguculuk.jpg" alt="">
+                    </div>
+                    <p>Azərbaycan Üzgüçülük Federasiyası</p>
+                    <h5>Xanlar Fətiyev</h5>
+                </div>
+                <div class="item">
+                    <div class="fed-image">
+                        <img src="fed images/minifutbol.jpg" alt="">
+                    </div>
+                    <p>Azərbaycan Minifutbol Federasiyası</p>
+                    <h5>Taleh Nəsibov</h5>
+                </div>
+                <div class="item">
+                    <div class="fed-image">
+                        <img src="fed images/tennis.jpg" alt="">
+                    </div>
+                    <p>Azərbaycan Tennis Federasiyası</p>
+                    <h5>Əsədov oğlu</h5>
+                </div>
+                <div class="item">
+                    <div class="fed-image">
+                        <img src="fed images/stoltennis.jpg" alt="">
+                    </div>
+                    <p>Azərbaycan Stolüstü Tennis Federasiyası</p>
+                    <h5>Şahin Mustafayev</h5>
+                </div>
+                <div class="item">
+                    <div class="fed-image">
+                        <img src="fed images/agiratletika.jpg" alt="">
+                    </div>
+                    <p>Azərbaycan Ağır Atletika Federasiyası</p>
+                    <h5>İnam Kərimov</h5>
+                </div>
+                <div class="item">
+                    <div class="fed-image">
+                        <img src="fed images/kapoeyra.jpg" alt="">
+                    </div>
+                    <p>Azərbaycan Kapoeyra Federasiyası</p>
+                    <h5>Muradova Günel</h5>
+                </div>
+            </div>
+        </section>
+
+        <section id="champions">
+            <h1>Olimpiya çempionları</h1>
+            <div class="swiper mySwiper container2">
+                <div class="swiper-wrapper content">
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/img/Hacı Əliyev1.jpeg" alt="">
+                            </div>
+
+                            <div class="name-profession">
+                                <span class="name">Hacı Əliyev</span>
+                                <span class="profession">Güləş</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/img/İrina Zaretska1.jpg" alt="">
+                            </div>
+
+                            <div class="name-profession">
+                                <span class="name">İrina Zaretska</span>
+                                <span class="profession">Karate</span>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/img/Rafael Agayev1.jpeg" alt="">
+                            </div>
+
+                            <div class="name-profession">
+                                <span class="name">Rafael Ağayev</span>
+                                <span class="profession">Karate</span>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/img/Rafiq Hüseynov.jpeg" alt="">
+                            </div>
+
+                            <div class="name-profession">
+                                <span class="name">Rafiq Hüseynov</span>
+                                <span class="profession">Güləş</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/img/Mariya Stadnik1.jpeg" alt="">
+                            </div>
+
+                            <div class="name-profession">
+                                <span class="name">Mariya Stadnik</span>
+                                <span class="profession">Güləş</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/img/Patimat Abakarova.jpg" alt="">
+                            </div>
+
+                            <div class="name-profession">
+                                <span class="name">Patimat Abakarova</span>
+                                <span class="profession">Taekvondo</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </section>
+
+        <!-- <section class="">
+            <div></div>
+            <img src="" alt="">
+        </section> -->
+
+        <section id="gallery">
+            <h1>Qalareya</h1>
+            <div class="animate">
+                <span style="--i:1;"><img src="img/slider1.jpg" alt=""></span>
+                <span style="--i:2;"><img src="img/slider2.jpg" alt=""></span>
+                <span style="--i:3;"><img src="img/slider3.jpg" alt=""></span>
+                <span style="--i:4;"><img src="img/slider1.jpg" alt=""></span>
+                <span style="--i:5;"><img src="img/slider5.jpg" alt=""></span>
+                <span style="--i:6;"><img src="" alt=""></span>
+                <span style="--i:7;"><img src="" alt=""></span>
+                <span style="--i:8;"><img src="" alt=""></span>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="contact">
+                <h1>Əlaqə</h1>
+                <p><i class="fa-solid fa-location-dot"></i> Ünvan: AZ1072, Bakı, Olimpiya küçəsi 4</p>
+                <p><i class="fa-solid fa-phone"></i> Telefon: +994 12 465-84-21 (Ümumi şöbə)</p>
+                <p><i class="fa-regular fa-envelope"></i> E-mail: mys@mys.gov.az</p>
+            </div>
+            <h1 class="footer-middle">Azərbaycanda İdman!</h1>
+            <ul class="social-media">
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Müəllif hüquqları qorunur. ® Eldəniz Mustafazadə, Elman Məmişov</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            centerSlide: 'true',
+            fade: 'true',
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                520: {
+                    slidesPerView: 2,
+                },
+                950: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>
